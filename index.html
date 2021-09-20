@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body class="bg-success p-2 text-dark bg-opacity-10">
+    
+    <!-- Search header  -->
+    <div>
+        <h1 class="text-center mt-5">Search Your Book</h1>
+    </div>
+
+    <!-- Search box -->
+    <div class="input-group mb-5 w-50 m-4 mx-auto">
+        <input id="queryText" type="text" class="form-control" placeholder="Book name" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button onclick="getQueryText()" class="btn btn-outline-secondary" type="button">Search</button>
+        </div>
+    </div>
+
+    <!-- Spinner  -->
+    <div id="spinner" class="text-center mt-5", style="display: none;">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+
+    <!-- Book container  -->
+    <section id="book-container" class="row g-2 m-3 ">
+
+    </section>
+
+    <!-- End section  -->
+    <section id="end-section">
+
+    </section>
+
+
+    <!-- JS script  -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
